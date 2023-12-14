@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 27</title>
+</head>
+<body>
+    <script>
+        const Name = "Лиза" /* неизменяемая переменная */
+        let age = 20; /* изменяемая переменная */
+
+        age = "20"; /* переменная принимает тип данных строка */
+        Name = 20; /* выдаст ошибку из-за изменения типа данных у постоянной переменной */
+
+        console.log(age, Name)
+    </script>
+</body>
+</html>
