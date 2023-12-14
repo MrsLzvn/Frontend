@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 28.1</title>
+</head>
+<body>
+    <script>
+        //примитивные значения
+        const un = undefined;
+        const null1 = null;
+        const boolean1 = true;
+        const number1 = 20;
+        const big1 = 12345678901234566;
+        const symbol1 = Symbol('id');
+        const string1 = "Привет, мир!";
+
+        //объекты
+        const object1 = {name: 'Alex'};
+        const array1 = [1, 2, 3];
+        const fn = function () {};
+        const date1 = new Date();
+
+        //вывод
+        console.log('un') //un
+        console.log(un) //undefined
+        console.dir(un) //undefined
+
+        console.log('null1') //null1
+        console.log(null1) //null
+        console.dir(null1) //null
+
+        console.log('boolean1') //boolean1
+        console.log(boolean1) //true
+        console.dir(boolean1) //true
+
+        console.log('number1') //number1
+        console.log(number1) //20
+        console.dir(number1) //20
+
+        console.log('big1') //big1
+        console.log(big1) //12345678901234566
+        console.dir(big1) //12345678901234566
+
+        console.log('symbol1') //symbol1
+        console.log(symbol1) //Symbol('id')
+        console.dir(symbol1) //Symbol('id')
+
+        console.log('string1') //string1
+        console.log(string1) //Привет, мир!
+        console.dir(string1) //Привет, мир!
+
+        console.log('object1') //object1
+        console.log(object1) //object
+        console.dir(object1) //object
+
+        console.log('array1') //array1
+        console.log(array1) //Array(3)
+        console.dir(array1) //Array(3)
+
+        console.log('fn') //fn
+        console.log(fn) //f () {}
+        console.dir(fn) // f fn()
+
+        console.log('date1') //date1
+        console.log(date1) //сегодняшняя дата
+        console.dir(date1) //сегодняшняя дата
+    </script>
+</body>
+</html>
