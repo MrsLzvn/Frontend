@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 32</title>
+</head>
+<body>
+    <script>
+        const value1 = "25.3";
+        const value2 = "786.867";
+
+        const result = Number(value1) + Number(value2); //сложение чисел
+
+        const formed_result = new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB' }).format(Math.ceil(result)); // Округляем и форматируем сумму
+
+        console.log(formed_result); //вывод результата
+    </script>
+</body>
+</html>

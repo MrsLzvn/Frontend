@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 33</title>
+</head>
+<body>
+    <script>
+        const un = undefined; //не может быть числом (NaN)
+        console.log('un: ', Number(un), Boolean(un), String(un));
+        const null1 = null;
+        console.log('null1: ', Number(null1), Boolean(null1), String(null1));
+        const boolean1 = true;
+        console.log('boolean1: ', Number(boolean1), Boolean(boolean1), String(boolean1));
+        const number1 = 20;
+        console.log('number1: ', Number(number1), Boolean(number1), String(number1));
+        const big1 = 12345678901234566;
+        console.log('big1: ', Number(big1), Boolean(big1), String(big1));
+        const symbol1 = Symbol('id'); //не можеть быть числом (NaN)
+        console.log('symbol1: ', Boolean(symbol1), String(symbol1));
+        const string1 = "Привет, мир!"; //не может быть числом (NaN)
+        console.log('string1: ', Number(string1), Boolean(string1), String(string1));
+        const object1 = {name: 'Alex'}; //не может быть числом (NaN)
+        console.log('object1: ', Number(object1), Boolean(object1), String(object1));
+        const array1 = [1, 2, 3]; //не может быть числом (NaN)
+        console.log('array1: ', Number(array1), Boolean(array1), String(array1));
+        const fn = function () {}; //не может быть числом (NaN)
+        console.log('fn: ', Number(fn), Boolean(fn), String(fn));
+        const date1 = new Date();
+        console.log('age: ', Number(date1), Boolean(date1), String(date1));
+    </script>
+</body>
+</html>

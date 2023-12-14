@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 38.2</title>
+</head>
+<body>
+    <script>
+        const add = (x, y) => x + y;
+        const subtract = (x, y) => x - y;
+        const multiply = (x, y) => x * y;
+        const divide = (x, y) => x / y;
+
+        const calculate = (x, y, operation) => operation(x, y);
+
+        const resultAdd = calculate(1, 2, add); //сложение
+        const resultSubtract = calculate(10, 5, subtract); //вычитание
+        const resultMultiply = calculate(4, 3, multiply); //умножение
+        const resultDivide = calculate(10, 2, divide); //деление
+
+        console.log(resultAdd); //выведет 3
+        console.log(resultSubtract); //выведет 5
+        console.log(resultMultiply); //выведет 12
+        console.log(resultDivide); //выведет 5
+
+    </script>
+</body>
+</html>

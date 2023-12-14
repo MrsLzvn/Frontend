@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 37.1</title>
+</head>
+<body>
+    <script>
+        //Function Declaration
+        function funcDeclaration(name) {
+            return `Привет ${name}!`;
+        }
+
+        //Function Expression (Normal)
+        const funcExpressionNormal = function(name) {
+            return `Привет ${name}!`;
+        };
+
+        //Function Expression (Arrow)
+        const funcExpressionArrow1 = (name) => `Привет ${name}!`;
+
+        //Function Expression (Arrow) если 1 аргумент
+        const funcExpressionArrow2 = name => `Привет ${name}!`;
+
+        console.log(funcDeclaration('Alex'));
+        console.log(funcExpressionNormal('Alex'));
+        console.log(funcExpressionArrow1('Alex'));
+        console.log(funcExpressionArrow2('Alex'));
+    </script>
+</body>
+</html>

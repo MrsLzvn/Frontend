@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 30</title>
+</head>
+<body>
+    <script>
+        const text = 'всеМ прИвЕт, прИяТно ПоЗНакоМиТьсЯ!';
+        const newText = text.charAt(0).toUpperCase() + text.slice(1).toLowerCase(); //все буквы строчные кроме первой
+        const replacedText = newText.replace('привет', 'пока') //замена слова
+
+        // вывод строки
+        console.log(replacedText);
+
+        // количество символов 
+        console.log(replacedText.length);
+
+        // последний символ
+        console.log(replacedText.charAt(replacedText.length - 1));
+    </script>
+</body>
+</html>
